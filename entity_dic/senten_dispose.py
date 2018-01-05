@@ -4,9 +4,11 @@ import re
 只针对中文括号
 刘志成
 '''
-senten = '中华人民共和国（简称中国）位于亚洲（东亚），是世界上面积第三大的国家'
+senten = '本文为必康股份(26.380, 0.03, 0.11%)实际控制人李宗松专访'
 
-pattern = re.compile(r'（|）')
+# pattern = re.compile(r'（|）')
+# pattern = re.compile(r'\(|\)')
+pattern = re.compile(r'（|）|\(|\)')
 sentens = pattern.split(senten)
 
 print(len(sentens))
