@@ -31,7 +31,7 @@ def sentences_extraction(read_path,write_path):
     # writer = pd.ExcelWriter(write_path)
 
 
-    regex = r'。|！|？'
+    regex = r'。|！|？|；'
     pattern = re.compile(regex)
 
 
@@ -98,4 +98,4 @@ def remove_bracket(senten):
 
 
 if __name__ == '__main__':
-    sentences_extraction( r'C:\Users\ypdeng\Desktop\数据\train_data.xls', r'C:\Users\ypdeng\Desktop\训练数据.xls')
+    sentences_extraction( r'C:\Users\ypdeng\Desktop\数据\train_data1.xls', r'C:\Users\ypdeng\Desktop\训练数据.xls')

@@ -22,10 +22,10 @@ def scratch_url(index1 = 0):
     #页面的完整url
     URL = ''
     num = 0
-    for i  in range(1,47):
+    for i in range(1,41):
         print(i)
         if i ==1:
-            index = 'index.shtml'
+            index = 'index_1.shtml'
         else:
             index = 'index_'+str(i)+ '.shtml'
         URL = prefix+index
@@ -99,6 +99,11 @@ def scratch_article(path=r'C:\Users\ypdeng\Desktop\数据\news_link.xls',index =
 
 if __name__ == '__main__':
     #link_path = scratch_url(1)
-    link_path = r'C:\Users\ypdeng\Desktop\news_link1.xls'
-    scratch_article(link_path,2)
+    # link_path = r'C:\Users\ypdeng\Desktop\news_link1.xls'
+    # scratch_article(link_path,2)
+
+    #index1 = 2,index = 3
+    link_path = scratch_url(2)
+    scratch_article(link_path,3)
+    print('爬虫结束')
 
